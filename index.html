@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PyLoT // Terminal</title>
 
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --green: #00ff66;
+      --cyan: #00ffff;
+      --magenta: #ff00ff;
+      --yellow: #ffee00;
+      --red: #ff3355;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--green);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 15px;
+    }
+
+    .terminal {
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 30px;
+      border: 2px solid var(--cyan);
+      box-shadow: 0 0 25px var(--cyan);
+    }
+
+    .ascii {
+      color: var(--magenta);
+      text-shadow: 0 0 6px var(--magenta);
+      white-space: pre;
+      font-size: 12px;
+    }
+
+    .prompt {
+      color: var(--cyan);
+    }
+
+    .cmd {
+      color: var(--yellow);
+    }
+
+    .text {
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background: var(--green);
+      margin-left: 4px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-shadow: 0 0 5px var(--cyan);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="terminal">
+
+<pre class="ascii">
+██████╗ ██╗   ██╗██╗      ██████╗ ████████╗
+██╔══██╗╚██╗ ██╔╝██║     ██╔═══██╗╚══██╔══╝
+██████╔╝ ╚████╔╝ ██║     ██║   ██║   ██║
+██╔═══╝   ╚██╔╝  ██║     ██║   ██║   ██║
+██║        ██║   ███████╗╚██████╔╝   ██║
+╚═╝        ╚═╝   ╚══════╝ ╚═════╝    ╚═╝
+
+> PyLoT :: AI · Code · Systems · Thought
+</pre>
+
+<div class="text">
+  <span class="prompt">pylot@github</span>:<span class="cmd">~$</span> whoami
+  <br><br>
+  Builder. Thinker. Systems hacker.
+  <br>
+  Writing about AI, Python, automation and personal tools.
+  <br><br>
+
+  <span class="prompt">pylot@github</span>:<span class="cmd">~$</span> ls
+  <br><br>
+  ▸ <a href="#">/ai</a><br>
+  ▸ <a href="#">/python</a><br>
+  ▸ <a href="#">/projects</a><br>
+  ▸ <a href="#">/notes</a>
+  <br><br>
+
+  <span class="prompt">pylot@github</span>:<span class="cmd">~$</span> _
+  <span class="cursor"></span>
+</div>
+
+  </div>
+</body>
+</html>
